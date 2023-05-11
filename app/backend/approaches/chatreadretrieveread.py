@@ -8,7 +8,7 @@ from text import nonewlines
 # top documents from search, then constructs a prompt with them, and then uses OpenAI to generate an completion 
 # (answer) with that prompt.
 class ChatReadRetrieveReadApproach(Approach):
-    prompt_prefix = """You are an AI assistant specialized in answering questions about government broadband grant programs, the Chips Act, Nextlink Internet, and Tuskegee University. 
+    prompt_prefix = """You are an intelligent assistant helping answer questions about the Catalyst Grant Progam. 
 
 When answering questions, adhere to the following guidelines:
 1. Use ONLY the facts provided in the list of sources below. If the information is insufficient, say you don't know.
@@ -25,10 +25,10 @@ Sources:
 {chat_history}
 """
 
-    follow_up_questions_prompt_content = """Generate three brief follow-up questions that the user would likely ask next. Use double angle brackets to reference the questions (e.g., <<Are there exclusions for rural wireless internet service providers?>>). Avoid repeating questions that have already been asked. Only generate questions, and do not include any additional text before or after the questions.
+    follow_up_questions_prompt_content = """Generate three brief follow-up questions that the user would likely ask next. Use double angle brackets to reference the questions (e.g., <<Are there exclusions for colleges and universities?>>). Avoid repeating questions that have already been asked. Only generate questions, and do not include any additional text before or after the questions.
 """
 
-    query_prompt_template = """Given the conversation history and a new user question, generate a search query to find information about government broadband grants and The Chips and Science Act. 
+    query_prompt_template = """Given the conversation history and a new user question, generate a search query to find information about the Catalyst Grant Program. 
 
 - Do not include cited source filenames or document names (e.g., info.txt or doc.pdf) in the search query terms.
 - Do not include any text inside [] or <<>> in the search query terms.

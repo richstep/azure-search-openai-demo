@@ -9,14 +9,14 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "How does RDOF compare to CAF II?",
-        value: "How does RDOF compare to CAF II?"
+        text: "What are the topic requirements?",
+        value: "What are the topic requirements?"
     },
     {
-        text: "Write a press release about Nextlink, CAF Phase II, fixed wireless, and fiber.",
-        value: "Write a press release about Nextlink and CAF Phase II pointing out the importance of fixed wireless over fiber. Include a quote from the Nextlink CEO."
+        text: "What are some ideas on how to use data to facilitate justice reform?",
+        value: "What are some ideas on how to use data to facilitate justice reform among government officials?"
     },
-    { text: "What can HBCU's do with the CHIPS act?", value: "What can HBCU's do with the CHIPS act? Give a long detailed answer." }
+    { text: "What Microsoft products are mentioned?", value: "What Microsoft products are mentioned in the Catalyst Grant Program Request for Proposal?" }
 ];
 
 interface Props {
