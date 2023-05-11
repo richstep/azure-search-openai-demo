@@ -9,11 +9,14 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "What is included in my Northwind Health Plus plan that is not in standard?",
-        value: "What is included in my Northwind Health Plus plan that is not in standard?"
+        text: "How does RDOF compare to CAF II?",
+        value: "How does RDOF compare to CAF II?"
     },
-    { text: "What happens in a performance review?", value: "What happens in a performance review?" },
-    { text: "What does a Product Manager do?", value: "What does a Product Manager do?" }
+    {
+        text: "Write a press release about Nextlink, CAF Phase II, fixed wireless, and fiber.",
+        value: "Write a press release about Nextlink and CAF Phase II pointing out the importance of fixed wireless over fiber. Include a quote from the Nextlink CEO."
+    },
+    { text: "What can HBCU's do with the CHIPS act?", value: "What can HBCU's do with the CHIPS act? Give a long detailed answer." }
 ];
 
 interface Props {
