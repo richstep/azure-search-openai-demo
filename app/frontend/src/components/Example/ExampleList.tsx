@@ -9,11 +9,17 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "What is included in my Northwind Health Plus plan that is not in standard?",
-        value: "What is included in my Northwind Health Plus plan that is not in standard?"
+        text: "What does the RFP say about people who are incarcerated?",
+        value: "What does the RFP say about peopÏle who are incarcerated? Give in a list format.?"
     },
-    { text: "What happens in a performance review?", value: "What happens in a performance review?" },
-    { text: "What does a Product Manager do?", value: "What does a Product Manager do?" }
+    {
+        text: "What are the eligibility requirements?",
+        value: "What are the eligibility requirements? Give in a list format."
+    },
+    {
+        text: "Write a long executive summary.",
+        value: "Write a long executive summary responding to the Catalyst Grant RPF explaining why my non-profit should get a grant. Things about my org, 1. we advocating for a cap on punishments for serious offenses at 20 years and a universal “second look” review process, 2. we do local campaign efforts focused on ending disenfranchisement and expanding voting rights to citizens with felony convictions, 3. we make data driven decisions to ensure we are allocating resources to the optimal areas. Emphasis how my org aligns with the objectives of the Catalyst RFP."
+    }
 ];
 
 interface Props {

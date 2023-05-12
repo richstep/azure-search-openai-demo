@@ -10,7 +10,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " + \
+"You are an intelligent assistant helping answer questions about the Catalyst Grant Progam. " + \
 "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. " + \
 "Answer the following question using only the data provided in the sources below. " + \
 "For tabular information return it as an html table. Do not return markdown format. "  + \
@@ -19,16 +19,17 @@ class RetrieveThenReadApproach(Approach):
 """
 
 ###
-Question: 'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+Question: 'What does the program request for proposals say about eligibility?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+Catalyst_RFP_Round_3_final-7.pdf: We are seeking lead organizations that are locally embedded with demonstrated relationships.
+Catalyst_RFP_Round_3_final-7.pdf: Understanding that inequities in the criminal legal system disproportionately affect people of color.
+Catalyst_RFP_Round_3_final-7.pdf: We encourage small community-based 
+organizations to apply.
+Catalyst_RFP_Round_3_final-13.pdf:  We encourage you to submit your proposal well before the deadline so that any unforeseen difficulties.
 
 Answer:
-In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf].
+Lead applicants must be 501(c)(3) organizations based in the United States [Catalyst_RFP_Round_3_final-7.pdf] and should be submitted early [Catalyst_RFP_Round_3_final-13.pdf].
 
 ###
 Question: '{q}'?
