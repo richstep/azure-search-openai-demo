@@ -10,7 +10,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " + \
+"You are an intelligent assistant helping answer questions about government broadband grant programs, the Chips Act, Nextlink Internet, and Tuskegee University. " + \
 "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. " + \
 "Answer the following question using only the data provided in the sources below. " + \
 "For tabular information return it as an html table. Do not return markdown format. "  + \
@@ -19,16 +19,16 @@ class RetrieveThenReadApproach(Approach):
 """
 
 ###
-Question: 'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+Question: 'What is the Chips Act and what does it say about underpresented populations?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+PLAW-117publ167_ChipsAct-7.pdf: A law that provides funding and incentives to support the semiconductor industry and related technology development.
+PLAW-117publ167_ChipsAct-7.pdf: Creating Helpful Incentives to Produce Semiconductors.
+PLAW-117publ167_ChipsAct-7.pdf: The law also includes provisions to enhance national security and protect critical infrastructure from cyber threats.
+PLAW-117publ167_ChipsAct-13.pdf: The law includes provisions to support programs that target underrepresented populations, including women, minorities, veterans, and individuals with disabilities.
 
 Answer:
-In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf].
+The law aims to increase domestic production of semiconductors in the United States [PLAW-117publ167_ChipsAct.pdf] and [PLAW-117publ167_ChipsAct-13.pdf].
 
 ###
 Question: '{q}'?
