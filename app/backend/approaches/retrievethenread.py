@@ -10,7 +10,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-"You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " + \
+"You are an intelligent assistant helping answer questions about government broadband grant programs. " + \
 "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. " + \
 "Answer the following question using only the data provided in the sources below. " + \
 "For tabular information return it as an html table. Do not return markdown format. "  + \
@@ -19,16 +19,15 @@ class RetrieveThenReadApproach(Approach):
 """
 
 ###
-Question: 'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+Question: 'What is the projecct area eligibility?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+NFO Bringing Online Opportunities TX.pdf-7.pdf: project area must consist of the entirety of one or more contiguous designated areas
+NFO Bringing Online Opportunities TX.pdf-7.pdf: required to provide broadband service to all Unserved and Underserved locations
+NFO Bringing Online Opportunities TX.pdf-13.pdf: applications that will expand access to, and adoption of, broadband service.
 
 Answer:
-In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf].
+The law aims to increase domestic production of semiconductors in the United States [NFO Bringing Online Opportunities TX-12.pdf] and [NFO Bringing Online Opportunities TX.pdf-13.pdf].
 
 ###
 Question: '{q}'?
